@@ -148,7 +148,7 @@ with tab1:
             accept_multiple_files=True,
             help="R1/R2 can be uploaded separately; .gz files are accepted.",
         )
-        submit_upload = st.form_submit_button("Save Dataset to BioAI Server", type="primary")
+        submit_upload = st.form_submit_button("Save Dataset to Server", type="primary")
 
     if submit_upload:
         if not uploaded_files:
