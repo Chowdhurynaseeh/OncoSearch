@@ -1,4 +1,4 @@
-# 🧬 OncoSearch v2
+# 🧬 OncoSearch v1
 
 **Interactive DNA Pattern Matching and Algorithm Visualization**
 
