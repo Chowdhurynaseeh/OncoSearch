@@ -55,39 +55,110 @@ Features include:
 
 The visualization supports full selected-read traces, subject to memory safeguards.
 
+
 ## 🛠️ Installation
 
-### 1. Clone the Repository
+Follow these steps to install and run OncoSearch on your computer.
+
+### 1. Prerequisites
+
+Make sure you have installed:
+
+- **Python 3.11 or newer**
+- **Git**
+- **pip** (Python package manager)
+
+Check your Python and Git installations:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/OncoSearch.git
+python3 --version
+git --version
+```
+
+### 2. Clone the Repository
+
+Open your terminal and run:
+
+```bash
+git clone https://github.com/Chowdhurynaseeh/OncoSearch.git
 cd OncoSearch
 ```
 
-### 2. Create a Python Environment
+### 3. Create a Python Virtual Environment
 
-Python 3.11 or newer is recommended.
+Create a virtual environment to manage project dependencies.
+
+**macOS / Linux:**
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-### 3. Install Dependencies
+**Windows (PowerShell):**
+
+```powershell
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+Once activated, your terminal should display `(.venv)`.
+
+### 4. Install Dependencies
+
+Install all required Python packages:
 
 ```bash
+python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-### 4. Run the Application
+### 5. Run OncoSearch
+
+Start the Streamlit application:
 
 ```bash
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
-Open the local URL shown by Streamlit, usually:
+### 6. Open the Application
 
-http://localhost:8501
+After starting Streamlit, your terminal should display:
+
+```text
+Local URL: http://localhost:8501
+```
+
+Open your browser and visit:
+
+**http://localhost:8501**
+
+The OncoSearch application should now be running!
+
+### 7. Start Using OncoSearch
+
+1. Upload a FASTQ/FASTA file or enter a DNA sequence manually.
+2. Create and save a DNA search query panel.
+3. Open the **Search & Benchmark** tab.
+4. Select your dataset, patterns, and algorithms.
+5. Click **Run DNA Search & Benchmark**.
+6. Explore matching results, performance comparisons, and interactive algorithm animations.
+
+### 8. Stop the Application
+
+Press `Ctrl + C` in the terminal to stop Streamlit.
+
+To deactivate the virtual environment:
+
+```bash
+deactivate
+```
+
+## 🌐 Online Demo
+
+You can also use OncoSearch without installing it locally.
+
+**Live Application:** [https://oncosearch-v1.streamlit.app/](https://oncosearch-v1.streamlit.app/)
 
 ## 🔬 How to Use
 
