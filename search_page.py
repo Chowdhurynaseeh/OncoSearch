@@ -133,7 +133,7 @@ def _show_history(result_dir):
 def render_search_page(fetch_all, dataset_dir, data_dir):
     st.subheader("🔎 Multi-Pattern Search & Algorithm Laboratory")
     st.caption("Search saved FASTQ/FASTA or pasted DNA with five techniques. "
-               "Results and benchmark evidence can be stored on the BioAI server.")
+               "Results and benchmark evidence can be stored on the server.")
     result_dir = Path(data_dir) / "results"
     result_dir.mkdir(parents=True, exist_ok=True)
 
